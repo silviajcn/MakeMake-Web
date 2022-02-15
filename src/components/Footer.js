@@ -1,8 +1,22 @@
 import React from 'react';
 import {
     FirtsContainer,
-    SecondContainer,
+    ContainerTwo,
+    ContainerBase,
+    ContainerRow,
+    LogoImgMake,
     LogoImg,
+    Paises,
+    ContainerContactos,
+    Text,
+    ContainerIcons,
+    Links,
+    ContainerBaseForm,
+    ContainerForm,
+    ContainerFormInput,
+    ContainerFormButton,
+    ContainerThree,
+    Copyright,
 } from '../styles/Footer.elements';
 import {
     FaFacebookSquare,
@@ -14,56 +28,67 @@ const Footer = () => {
     return (
         <FirtsContainer>
 
-            <SecondContainer>
-                <div>
-                    <div>
+            <ContainerTwo>
+                <ContainerBase>
+                    <ContainerRow>
                         <div>
-                            <LogoImg src="https://res.cloudinary.com/silviajcn/image/upload/v1644873991/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makemake_xjypez.png" alt="logo-MakeMake" />
+                            <LogoImgMake src="https://res.cloudinary.com/silviajcn/image/upload/v1644873991/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makemake_xjypez.png" alt="logo-MakeMake" />
                         </div>
 
                         <div>
-                            <p>Es un producto de:</p>
+                            <Text>Es un producto de:</Text>
                             <LogoImg src="https://res.cloudinary.com/silviajcn/image/upload/v1644905448/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makina_rywfwy.png" alt="logo-MainaEditorial" />
                         </div>
-                    </div>
+                    </ContainerRow>
 
-                    <div>
-                        <p>COLOMBIA</p>
-                        <p>CHILE</p>
-                        <p>ECUADOR</p>
-                        <p>ESTADOS UNIDOS</p>
-                        <p>MÉXICO</p>
-                    </div>
-                </div>
+                    <ContainerRow>
+                        <Paises>COLOMBIA</Paises>
+                        <Paises>CHILE</Paises>
+                        <Paises>ECUADOR</Paises>
+                        <Paises>ESTADOS UNIDOS</Paises>
+                        <Paises>MÉXICO</Paises>
+                    </ContainerRow>
+                </ContainerBase>
 
-                <div>
-                    <p>Para información comercial contactar a:</p>
-                    <p>contacto@makemake.com.co</p>
-                    <p>(57) 350 236 7037</p>
-                    <p>(57) 350 201 1041, (57) 313 450 9992</p>
-                    <p>Cra 13 No. 33-74. Bogotá, Colombia</p>
+                <ContainerBase>
+                    <Text>Para información comercial contactar a:</Text>
+                    <Text>contacto@makemake.com.co</Text>
+                    <Text>(57) 350 236 7037</Text>
+                    <Text>(57) 350 201 1041, (57) 313 450 9992</Text>
+                    <Text>Cra 13 No. 33-74. Bogotá, Colombia</Text>
 
-                    <div>
-                        <FaFacebookSquare />
+                    <ContainerIcons>
+                        <Links href="https://www.facebook.com/Bookmakemake/" target="_blank" rel="noreferrer">
+                            <FaFacebookSquare />
+                        </Links>
 
-                        <FaInstagram />
+                        <Links href="https://www.instagram.com/makemakelibros/" target="_blank" rel="noreferrer">
+                            <FaInstagram />
+                        </Links>
+                        
+                        <Links href="https://www.youtube.com/channel/UCAGRlTJB3fUDRfkVRPVNdzQ" target="_blank" rel="noreferrer">
+                            <FaYoutube />
+                        </Links>
+                        
+                    </ContainerIcons>
+                </ContainerBase>
 
-                        <FaYoutube />
-                    </div>
-                </div>
+                <ContainerBaseForm>
+                    <Text>Suscríbete a nuestro boletín para recibir recomendaciones de lectura y actividades de nuestros libros.</Text>
 
-                <div>
-                    <p>Suscríbete a nuestro boletín para recibir recomendaciones de lectura y actividades de nuestros libros.</p>
+                    <ContainerForm>
+                        <ContainerFormInput 
+                            placeholder="Escribe tu email"
+                        />
 
-                    <div>
-                        <input />
-                    </div>
-                </div>
-            </SecondContainer>
+                        <ContainerFormButton>Subscribirse</ContainerFormButton>
+                    </ContainerForm>
+                </ContainerBaseForm>
+            </ContainerTwo>
 
-            <div>
-                <p>MakeMake Clone By Silvi. Todos los derechos reservados.</p>
-            </div>
+            <ContainerThree>
+                <Copyright>MakeMake Clone By Silvi. Todos los derechos reservados.</Copyright>
+            </ContainerThree>
             
         </FirtsContainer>
     )

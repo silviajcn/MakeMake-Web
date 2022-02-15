@@ -5,19 +5,14 @@ export const FirtsContainer = styled.div`
   height: auto;
 
   display: grid;
-  grid-template-columns: 550px 550px;
-  grid-template-rows: 480px 480px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 550px));
+  grid-auto-rows: 480px;
   column-gap: 50px;
   row-gap: 50px;
   justify-content: center;
 
   @media screen and (max-width: 850px) {
     width: 750px;
-
-    grid-template-columns: 320px 320px;
-    grid-template-rows: 360px 360px;
-    column-gap: 30px;
-    row-gap: 20px;
   }
 `
 

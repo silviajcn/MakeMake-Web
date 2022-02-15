@@ -21,7 +21,7 @@ export const FirtsContainer = styled.div`
 export const ContainerOne = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   width: 250px;
@@ -44,7 +44,13 @@ export const ContainerOneIcon = styled.div`
   justify-content: center;
   align-items: center;
 
-  font-size: 12px;
+  font-size: 10px;
+
+  margin: 0px 10px;
+`
+
+export const ContainerOneInfo = styled.p`
+  font-weight: bold;
 `
 
 export const ContainerTwo = styled.div`

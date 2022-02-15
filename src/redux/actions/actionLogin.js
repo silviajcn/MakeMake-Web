@@ -1,6 +1,6 @@
 import { typesLogin } from '../types/types';
 import { getAuth, signInWithPopup, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { google, facebook } from '../firebase/firebaseConfig';
+import { google } from '../firebase/firebaseConfig';
 
 // Action logout async
 export const logout = () => {
@@ -16,8 +16,6 @@ export const logoutSync = () => {
         payload: {}
     }
 }
-
-// Action login facebook async
 
 // Action login google async
 

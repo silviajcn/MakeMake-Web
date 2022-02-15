@@ -1,7 +1,13 @@
 import { typesInstitutos } from '../types/types';
 
 const initialState = {
-    institutes: []
+    institutes: [],
+    updateItem: {
+        nombre: '',
+        telefono: '',
+        correo: '',
+        color: '',
+    }
 }
 
 export const institutosReducer = (state = initialState, action) => {
@@ -15,11 +21,22 @@ export const institutosReducer = (state = initialState, action) => {
             return {
                 institutes: action.payload
             }
+
+        case typesInstitutos.details:
+            return {
+                institutes: action.payload
+            }
         
-        // case typesInstitutos.update:
-        //     return {
-        //         ...state,
-        //     }
+        case typesInstitutos.update:
+            return {
+                ...state,
+                updateItem: action.payload
+            }
+
+        case typesInstitutos.delete:
+            return {
+                institutes: state.institutes.filter(inst => inst.sede !== action.payload)
+            }
     
         default:
             return state;

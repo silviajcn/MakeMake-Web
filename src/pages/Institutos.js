@@ -1,10 +1,12 @@
 import React from 'react';
 import Cards from '../components/Cards.js';
+import { Link } from "react-router-dom";
 import {
     FirtsContainer,
     ContainerOne,
     ContainerOneItems,
     ContainerOneIcon,
+    ContainerOneInfo,
     ContainerTwo,
     ContainerTwoP,
     ContainerThree,
@@ -18,14 +20,16 @@ const Institutos = () => {
     return (
         <FirtsContainer>
             <ContainerOne>
-                <p>Institutos</p>
+                <Link to="/" className="links">
+                    <p>Home</p>
+                </Link>
 
                 <ContainerOneItems>
                     <ContainerOneIcon>
                         <FaChevronRight />
                     </ContainerOneIcon>
                     
-                    <span><strong>Todos los intitutos</strong></span>
+                    <ContainerOneInfo>Todos los intitutos</ContainerOneInfo>
                 </ContainerOneItems>
             </ContainerOne>
 
