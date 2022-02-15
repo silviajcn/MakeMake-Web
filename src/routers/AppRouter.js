@@ -1,9 +1,16 @@
 import React from 'react';
+import NavBarOne from '../components/NavBarOne';
+import Institutos from '../pages/Institutos';
+import Footer from '../components/Footer';
 
 const AppRouter = () => {
     return (
         <div>
-            <h1>MakeMake</h1>
+            <NavBarOne />
+            
+            <Institutos />
+
+            <Footer />
         </div>
     )
 };
