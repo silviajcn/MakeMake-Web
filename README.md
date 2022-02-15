@@ -1,8 +1,10 @@
 # 📚 MakeMake
 
+<img width="30%" align="right" style="margin-right:5%" alt="Developer" src="https://res.cloudinary.com/silviajcn/image/upload/v1644932126/Pruebas%20Tecnicas/MakeMake/PaginaWeb/images/que-es-ninia_kp8je0.png" />
+
 MakeMake es una biblioteca digital que ofrece una cuidadosa selección de libros de las mejores editoriales de América Latina para promover la lectura crítica y de calidad en niños y jóvenes.
 
-<img width="40%" align="right" style="margin-right:5%" alt="Developer" src="https://res.cloudinary.com/silviajcn/image/upload/v1644932126/Pruebas%20Tecnicas/MakeMake/PaginaWeb/images/que-es-ninia_kp8je0.png" />
+
 
 ## 📌 Requisitos del proyecto:
 
