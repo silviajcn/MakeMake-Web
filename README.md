@@ -1,9 +1,14 @@
 # 📚 MakeMake
 
-MakeMake es una biblioteca digital.
+MakeMake es una biblioteca digital que ofrece una cuidadosa selección de libros de las mejores editoriales de América Latina para promover la lectura crítica y de calidad en niños y jóvenes.
 
-## 📌 Requisitos:
+<img width="40%" align="right" style="margin-right:5%" alt="Developer" src="https://res.cloudinary.com/silviajcn/image/upload/v1644932126/Pruebas%20Tecnicas/MakeMake/PaginaWeb/images/que-es-ninia_kp8je0.png" />
 
+## 📌 Requisitos del proyecto:
+
+* Proyecto realizado en Reactjs
+* El proyecto debe ser responsive
+* Contar con la página principal donde se llamen los datos del archivo data.json
 
 ## 💻 Puede visitar MakeMake Web igresa al siguiente link:
 
@@ -14,7 +19,15 @@ Para la creación del proyecto se utilizaron las siguientes herramientas de desa
 
 * ```react```
 * ```react-router-dom```
+* ```react-redux```
+* ```redux```
+* ```redux-thunk```
+* ```firebase```
+* ```formik```
+* ```yup```
 * ```styled-components```
+* ```react-bootstrap```
+* ```react-icons```
 
 ## 🔥 Descarga del proyecto e Instalación
 
