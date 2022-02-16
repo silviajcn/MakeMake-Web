@@ -52,6 +52,10 @@ Otras herramientas de desarrollo:
 
 ![MakeMake-capture](https://user-images.githubusercontent.com/88461234/154322755-09278746-2ef6-426d-a1cb-9f2522bde14b.png)
 
+### Vista en pc:
+
+<img width="50%" align="left" alt="vistas" src="https://media.giphy.com/media/YQS80mxGHml7IIWXhQ/giphy.gif" />
+
 ## 🌟 Autor
 
 * **Silvia C. Navarro**  - [@silviajcn](https://github.com/silviajcn)
