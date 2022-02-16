@@ -55,6 +55,10 @@ Otras herramientas de desarrollo:
 
 <img width="50%" alt="vistas" src="https://media.giphy.com/media/YQS80mxGHml7IIWXhQ/giphy.gif" />
 
+### Vista en iPad Mini:
+
+<img height="50%" alt="vistas" src="https://media.giphy.com/media/Fx7CMO5MABpCv6k2N9/giphy.gif" />
+
 ### Vista en celular:
 
 <img height="50%" alt="vistas" src="https://media.giphy.com/media/QEXhcFjmlEEIviaMb4/giphy.gif" />
