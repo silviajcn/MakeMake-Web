@@ -6,7 +6,7 @@ MakeMake es una biblioteca digital que ofrece una cuidadosa selección de libro
 
 En la página se puede:
 * Ver los institutos que cuentan con planes, así como su información respectiva.
-* En el buscador ubicado en la página de Institutos, se puede realizar la búsqueda por nombre de instituto, con palabras en minúsculas.
+* En el buscador ubicado en la página de "Institutos", se puede realizar la búsqueda por nombre de instituto, con palabras en minúsculas.
 * Al dar click en "Ver/Editar" o en el boton de "Editar sede", el usuario será redireccionado a la página de "Editar sede", en donde podrá ver la información en los campos, y al dar click en editar estará disponible la información que desea editar, esta acción se puede realizar cuantas veces se necesite.
 * Se puede eliminar el instituto al dar click en "Eliminar sede", esta acción es irreversible.
 
