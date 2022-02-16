@@ -58,7 +58,7 @@ Otras herramientas de desarrollo:
 
 ### Vista en celular:
 
-<img width="50%" alt="vistas" src="https://media.giphy.com/media/QEXhcFjmlEEIviaMb4/giphy.gif" />
+<img height="50%" alt="vistas" src="https://media.giphy.com/media/QEXhcFjmlEEIviaMb4/giphy.gif" />
 
 ## 🌟 Autor
 
