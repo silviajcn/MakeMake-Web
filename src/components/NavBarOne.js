@@ -8,7 +8,7 @@ import {
 
 const NavBarOne = () => {
     return (
-        <FirtsContainer>
+        <FirtsContainer className='font-two'>
             <EmailContainer>
                 <p>contacto@makemake.com.co</p>
             </EmailContainer>

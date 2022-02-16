@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import {
     FirtsContainer,
     ContainerTwo,
@@ -7,7 +8,6 @@ import {
     LogoImgMake,
     LogoImg,
     Paises,
-    ContainerContactos,
     Text,
     ContainerIcons,
     Links,
@@ -26,18 +26,22 @@ import {
 
 const Footer = () => {
     return (
-        <FirtsContainer>
+        <FirtsContainer className="font-two">
 
             <ContainerTwo>
                 <ContainerBase>
                     <ContainerRow>
                         <div>
-                            <LogoImgMake src="https://res.cloudinary.com/silviajcn/image/upload/v1644873991/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makemake_xjypez.png" alt="logo-MakeMake" />
+                            <Link to="/" className="links">
+                                <LogoImgMake src="https://res.cloudinary.com/silviajcn/image/upload/v1644873991/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makemake_xjypez.png" alt="logo-MakeMake" />
+                            </Link>
                         </div>
 
                         <div>
                             <Text>Es un producto de:</Text>
-                            <LogoImg src="https://res.cloudinary.com/silviajcn/image/upload/v1644905448/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makina_rywfwy.png" alt="logo-MainaEditorial" />
+                            <Links href="https://makinaeditorial.com/" target="_blank" rel="noreferrer">
+                                <LogoImg src="https://res.cloudinary.com/silviajcn/image/upload/v1644905448/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makina_rywfwy.png" alt="logo-MainaEditorial" />
+                            </Links>
                         </div>
                     </ContainerRow>
 
@@ -87,7 +91,7 @@ const Footer = () => {
             </ContainerTwo>
 
             <ContainerThree>
-                <Copyright>MakeMake Clone By Silvi. Todos los derechos reservados.</Copyright>
+                <Copyright>MakeMake By Silvi. Todos los derechos reservados.</Copyright>
             </ContainerThree>
             
         </FirtsContainer>

@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from '../hooks/useForm';
 import { showDetailInstitutoAsync, updateInstitutoAsync, updateInstitutoSync, deleteInstitutosAsync } from '../redux/actions/actionInstitutos';
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
     FirtsContainer,
     ContainerOne,
     ContainerOneItems,
     ContainerOneIcon,
-    ContainerOneInfo,
     ContainerTwo,
     ContainerThree,
     ContainerBase,
@@ -19,6 +18,7 @@ import {
     BtnEdit,
     ContainerColors,
     Color,
+    ColorCapa,
     ContainerActions,
     BtnDelete,
     IconDelete,
@@ -29,8 +29,6 @@ import { FaChevronRight } from "react-icons/fa";
 import { Form } from 'react-bootstrap';
 
 const EditData = () => {
-
-    let history = useNavigate();
 
     // Show Detail Institute
     const dispatch = useDispatch();
@@ -85,7 +83,7 @@ const EditData = () => {
         <FirtsContainer>
             <ContainerOne>
                 <Link to="/institutos" className="links">
-                    <p>Todos los institutos</p>
+                    <p className='font-two'>Todos los institutos</p>
                 </Link>
 
                 <ContainerOneItems>
@@ -93,11 +91,11 @@ const EditData = () => {
                         <FaChevronRight />
                     </ContainerOneIcon>
                     
-                    <ContainerOneInfo>Editar instituto</ContainerOneInfo>
+                    <p className='font-one'>Editar instituto</p>
                 </ContainerOneItems>
             </ContainerOne>
 
-            <ContainerTwo>
+            <ContainerTwo className='font-one'>
                 <h1>Editar sede</h1>
             </ContainerTwo>
 
@@ -112,7 +110,7 @@ const EditData = () => {
 
                 <ContainerBase>
                     <ContainerBaseTwo>
-                        <ContainerBaseTitle>Nombre<Span>*</Span></ContainerBaseTitle>
+                        <ContainerBaseTitle className='font-one'>Nombre<Span>*</Span></ContainerBaseTitle>
                     </ContainerBaseTwo>
 
                     <Input
@@ -124,6 +122,7 @@ const EditData = () => {
                     />
 
                     <BtnEdit
+                        className='font-one'
                         type="button"
                         value="update"
                         onClick={() => handleUpdate(e)}
@@ -134,8 +133,8 @@ const EditData = () => {
 
                 <ContainerBase>
                     <ContainerBaseTwo>
-                        <ContainerBaseTitle>Teléfono de contacto</ContainerBaseTitle>
-                        <p>El número que ingreses correponde al número de contacto donde tus usuarios podrán llamar si es necesario</p>
+                        <ContainerBaseTitle className='font-one'>Teléfono de contacto</ContainerBaseTitle>
+                        <p className='font-two'>El número que ingreses correponde al número de contacto donde tus usuarios podrán llamar si es necesario</p>
                     </ContainerBaseTwo>
 
                     <Input
@@ -147,6 +146,7 @@ const EditData = () => {
                     />
 
                     <BtnEdit
+                        className='font-one'
                         type="button"
                         value="update"
                         onClick={() => handleUpdate(e.sede)}
@@ -157,8 +157,8 @@ const EditData = () => {
 
                 <ContainerBase>
                     <ContainerBaseTwo>
-                        <ContainerBaseTitle>Correo de contacto</ContainerBaseTitle>
-                        <p>El correo que ingreses correponde al correo de contacto donde tus usuarios podrán escribir si es necesario</p>
+                        <ContainerBaseTitle className='font-one'>Correo de contacto</ContainerBaseTitle>
+                        <p className='font-two'>El correo que ingreses correponde al correo de contacto donde tus usuarios podrán escribir si es necesario</p>
                     </ContainerBaseTwo>
 
                     <Input
@@ -170,6 +170,7 @@ const EditData = () => {
                     />
 
                     <BtnEdit
+                        className='font-one'
                         type="button"
                         value="update"
                         onClick={() => handleUpdate(e.sede)}
@@ -180,8 +181,8 @@ const EditData = () => {
 
                 <ContainerBase>
                     <ContainerBaseTwo>
-                        <ContainerBaseTitle>Paquete asignado<Span>*</Span></ContainerBaseTitle>
-                        <p>Ya no se puede cambiar</p>
+                        <ContainerBaseTitle className='font-one'>Paquete asignado<Span>*</Span></ContainerBaseTitle>
+                        <p className='font-two'>Ya no se puede cambiar</p>
                     </ContainerBaseTwo>
 
                     <Input
@@ -193,41 +194,42 @@ const EditData = () => {
 
                 <ContainerBase>
                     <ContainerBaseTwo>
-                        <ContainerBaseTitle>Color del instituto (opcional)</ContainerBaseTitle>
-                        <p>Esta imagen será usada para mostrar el instituto en búsquedas y en su página de inicio</p>
+                        <ContainerBaseTitle className='font-one'>Color del instituto (opcional)</ContainerBaseTitle>
+                        <p className='font-two'>Esta imagen será usada para mostrar el instituto en búsquedas y en su página de inicio</p>
                     </ContainerBaseTwo>
 
                     <ContainerColors>
-                        <div style={{background: "#99D438"}}>
+                        <ColorCapa style={{background: "#99D438"}}>
                             <Color></Color>
-                        </div>
+                        </ColorCapa>
 
-                        <div style={{background: "#FFD100"}}>
+                        <ColorCapa style={{background: "#FFD100"}}>
                             <Color></Color>
-                        </div>
+                        </ColorCapa>
 
-                        <div style={{background: "#2990F0"}}>
+                        <ColorCapa style={{background: "#2990F0"}}>
                             <Color></Color>
-                        </div>
+                        </ColorCapa>
 
-                        <div style={{background: "#6680E3"}}>
+                        <ColorCapa style={{background: "#6680E3"}}>
                             <Color></Color>
-                        </div>
+                        </ColorCapa>
 
-                        <div style={{background: "#FF3548"}}>
+                        <ColorCapa style={{background: "#FF3548"}}>
                             <Color></Color>
-                        </div>
+                        </ColorCapa>
                         
-                        <div style={{background: "#FFBB62"}}>
+                        <ColorCapa style={{background: "#FFBB62"}}>
                             <Color></Color>
-                        </div>
+                        </ColorCapa>
                     </ContainerColors>
                 </ContainerBase>
 
-                <ContainerActions>
+                <ContainerActions >
                     <BtnDelete>
                         <IconDelete src="https://res.cloudinary.com/silviajcn/image/upload/v1644940836/Pruebas%20Tecnicas/MakeMake/PaginaWeb/icons/basura_tph30k.svg" alt="icon" />
                         <DeleteP
+                            className='font-one'
                             type="button"
                             value="delete"
                             onClick={() => dispatch(deleteInstitutosAsync(e.sede))}
@@ -243,7 +245,8 @@ const EditData = () => {
                             :
                             <Link to="/" className="links">
                             <BtnUpdate
-                                // type="submit"
+                                className='font-one'
+                                type="button"
                                 onClick={handlePut}
                             >
                                 Actualizar

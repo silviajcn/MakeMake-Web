@@ -1,27 +1,19 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { FirtsContainer, ContainerItems, ContainerImg, Text } from "../styles/Home.elements";
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
-
-            <div>
+        <FirtsContainer>
+            <ContainerItems>
 
             <Link to="/institutos" className="links">
-                 <p>Institutos</p>
+                <ContainerImg src="https://res.cloudinary.com/silviajcn/image/upload/v1644964604/Pruebas%20Tecnicas/MakeMake/PaginaWeb/images/plan_itotvr.png" alt="plan-colegios" />
+                <Text className='font-two'>Ingresar a Institutos</Text>
             </Link>
             
-            </div>
-
-            <div>
-
-            <Link to="/edit" className="links">
-                <p>Editar</p>
-            </Link>
-            
-            </div>
-        </div>
+            </ContainerItems>
+        </FirtsContainer>
     )
 };
 

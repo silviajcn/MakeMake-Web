@@ -35,7 +35,7 @@ const Cards = () => {
     }, []);
 
     return (
-        <FirtsContainer>
+        <FirtsContainer className='font-one'>
             {
                 institutes.map((e, i) => (
                     <ContainerCards key={i}>
@@ -110,7 +110,8 @@ const Cards = () => {
                                 </ContainerStatistics>
 
                                 <ContainerButton>
-                                    <Button 
+                                    <Button
+                                        className='font-one'    
                                         onClick={() => {
                                             dispatch(showDetailInstitutoAsync(e.sede))
                                             history("/edit")

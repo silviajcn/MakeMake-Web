@@ -17,11 +17,12 @@ import { FaChevronRight } from "react-icons/fa";
 import Search from '../components/Search.js';
 
 const Institutos = () => {
+
     return (
         <FirtsContainer>
             <ContainerOne>
                 <Link to="/" className="links">
-                    <p>Home</p>
+                    <p className='font-two'>Home</p>
                 </Link>
 
                 <ContainerOneItems>
@@ -29,17 +30,16 @@ const Institutos = () => {
                         <FaChevronRight />
                     </ContainerOneIcon>
                     
-                    <ContainerOneInfo>Todos los intitutos</ContainerOneInfo>
+                    <ContainerOneInfo className='font-one'>Todos los intitutos</ContainerOneInfo>
                 </ContainerOneItems>
             </ContainerOne>
 
-            <ContainerTwo>
+            <ContainerTwo className='font-one'>
                 <h1>Tus institutos (Sedes)</h1>
-
-                <ContainerTwoP>3/5 sedes asginadas</ContainerTwoP>
+                <ContainerTwoP>5/5 sedes asignadas</ContainerTwoP>
             </ContainerTwo>
 
-            <ContainerThree>
+            <ContainerThree className='font-two'>
                 <ContainerThreeFilter>Filtra por instituto y podrás ver los cursos asignados.</ContainerThreeFilter>
 
                 <div><Search /></div>

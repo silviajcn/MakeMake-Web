@@ -6,7 +6,7 @@ export const FirtsContainer = styled.div`
   /* justify-content: start;
   align-items: start; */
   
-  width: 100vw;
+  width: 100%;
   height: auto;
 
   background: url("https://res.cloudinary.com/silviajcn/image/upload/v1644873964/Pruebas%20Tecnicas/MakeMake/PaginaWeb/fondo/background_qbzzai.png") no-repeat;

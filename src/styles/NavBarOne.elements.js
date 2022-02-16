@@ -6,7 +6,7 @@ export const FirtsContainer = styled.div`
   justify-content: start;
   align-items: center;
   
-  width: 100vw;
+  width: 100%;
   height: 41.89px;
 
   background: #6680E3;

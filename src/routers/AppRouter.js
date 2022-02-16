@@ -1,16 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
 import NavBarOne from '../components/NavBarOne';
+import NavBarTwo from '../components/NavBarTwo';
 import Home from '../pages/Home';
 import Institutos from '../pages/Institutos';
 import EditData from '../pages/EditData';
 import Footer from '../components/Footer';
 
+
 const AppRouter = () => {
+
     return (
-        <Router>
+        <BrowserRouter>
 
             <NavBarOne />
+            <NavBarTwo />
 
             <Routes>
 
@@ -19,12 +24,14 @@ const AppRouter = () => {
                 <Route path='/institutos' element={ <Institutos /> } />
 
                 <Route path='/edit' element={ <EditData /> } />
+                
+                <Route path='*' element={<Navigate to="/" />} />
 
             </Routes>
 
             <Footer />
 
-        </Router>
+        </BrowserRouter>
     )
 };
 

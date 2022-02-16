@@ -6,7 +6,7 @@ export const FirtsContainer = styled.div`
   /* justify-content: start;
   align-items: start; */
   
-  width: 100vw;
+  width: 100%;
   height: auto;
 
   background: url("https://res.cloudinary.com/silviajcn/image/upload/v1644873964/Pruebas%20Tecnicas/MakeMake/PaginaWeb/fondo/background_qbzzai.png") no-repeat;
@@ -24,8 +24,9 @@ export const ContainerOne = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 270px;
+  width: 300px;
   height: 30px;
+  font-size: 14px;
 
   margin-top: 20px;
 
@@ -47,10 +48,6 @@ export const ContainerOneIcon = styled.div`
   font-size: 10px;
 
   margin: 0px 10px;
-`
-
-export const ContainerOneInfo = styled.p`
-  font-weight: bold;
 `
 
 export const ContainerTwo = styled.div`
@@ -132,6 +129,8 @@ export const ContainerBaseTwo = styled.div`
 
 export const ContainerBaseTitle = styled.p`
   font-weight: bold;
+
+  margin-bottom: 10px;
 `
 
 export const Span = styled.span`
@@ -178,7 +177,7 @@ export const ContainerColors = styled.div`
 
 export const Color = styled.div`
   width: 100%;
-  height: 70px;
+  height: 60px;
 
   background: url("https://res.cloudinary.com/silviajcn/image/upload/v1644873953/Pruebas%20Tecnicas/MakeMake/PaginaWeb/fondo/backBoton_o9dqly.png") no-repeat;
   background-size: cover;
@@ -188,6 +187,10 @@ export const Color = styled.div`
   border-radius: 5px;
 
   cursor: pointer;
+`
+
+export const ColorCapa = styled.div`
+  border-radius: 5px;
 `
 
 export const ContainerActions = styled.div`
