@@ -16,7 +16,7 @@ En la página se puede:
 * El proyecto debe ser responsive
 * Contar con la página principal donde se llamen los datos del archivo data.json
 
-## 💻 Puede visitar MakeMake Web igresa al siguiente link:
+## 💻 Para visitar MakeMake Web igresa al siguiente link:
 
 ### https://makemake-web.web.app/
     
