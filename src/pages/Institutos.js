@@ -43,7 +43,7 @@ const Institutos = () => {
             
             <ContainerDate>
                 <Date>
-                    <p className='font-one'>Su suscritción finaliza el 25/02/22</p>
+                    <p className='font-one'>Su suscripción finaliza el 25/02/22</p>
                 </Date>
             </ContainerDate>
 
