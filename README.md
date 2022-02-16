@@ -18,6 +18,8 @@ En la página se puede:
 
 ## 💻 Puede visitar MakeMake Web igresa al siguiente link:
 
+<img width="30%" align="right" style="margin-right:5%" alt="Developer" src="https://res.cloudinary.com/silviajcn/image/upload/v1644873991/Pruebas%20Tecnicas/MakeMake/PaginaWeb/Logo/logo-makemake_xjypez.png" />
+
 ### https://makemake-web.web.app/
     
 ## 💎 Proyecto
@@ -49,8 +51,6 @@ Otras herramientas de desarrollo:
 * Para levantar el servidor local se debe correr el comando ```npm start```
 
 ## 🔍 Vista 
-
-![MakeMake-capture](https://user-images.githubusercontent.com/88461234/154322755-09278746-2ef6-426d-a1cb-9f2522bde14b.png)
 
 ### Vista en pc:
 
