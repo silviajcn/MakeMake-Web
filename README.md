@@ -56,6 +56,10 @@ Otras herramientas de desarrollo:
 
 <img width="50%" alt="vistas" src="https://media.giphy.com/media/YQS80mxGHml7IIWXhQ/giphy.gif" />
 
+### Vista en celular:
+
+<img width="50%" alt="vistas" src="https://media.giphy.com/media/QEXhcFjmlEEIviaMb4/giphy.gif" />
+
 ## 🌟 Autor
 
 * **Silvia C. Navarro**  - [@silviajcn](https://github.com/silviajcn)
