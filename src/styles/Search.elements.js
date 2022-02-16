@@ -28,9 +28,22 @@ export const InputSearch = styled(FormControl)`
 
   padding: 0px 10px;
 
-  @media screen and (max-width: 850px) {
-    width: 360px;
-    height: 40px;
+  @media screen and (max-width: 1180px) {
+    width: 800px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 250px;
+    height: 35px;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 210px;
+    font-size: 10px;
   }
 `
 
@@ -48,6 +61,10 @@ export const BtnSearch = styled(Button)`
   border: none;
   &:hover {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 550px) {
+    display: none;
   }
 `
 

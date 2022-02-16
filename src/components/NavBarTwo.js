@@ -23,7 +23,9 @@ const NavBarTwo = () => {
                         <MenuItem>
                             <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                 <div>
-                                    <SubTitles>¿Qué es MakeMake?</SubTitles>
+                                    <Link to="/makemake" className="links">
+                                        <SubTitles>¿Qué es MakeMake?</SubTitles>
+                                    </Link>
                                 </div>
                             </MenuItemLink>
                         </MenuItem>
@@ -87,7 +89,9 @@ const NavBarTwo = () => {
                 </ContainerLinks>
 
                 <ContainerLinks>
-                    <LinksMenu>¿Qué es?</LinksMenu>
+                    <Link to="/makemake" className="links">
+                        <LinksMenu>¿Qué es?</LinksMenu>
+                    </Link>
 
                     <LinksMenu>Quiero MakeMake</LinksMenu>
 

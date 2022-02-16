@@ -5,14 +5,20 @@ export const FirtsContainer = styled.div`
   height: auto;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 550px));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 550px));
   grid-auto-rows: 480px;
   column-gap: 50px;
   row-gap: 50px;
   justify-content: center;
 
-  @media screen and (max-width: 850px) {
-    width: 750px;
+  @media screen and (max-width: 1190px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
+    grid-auto-rows: 450px;
+  }
+
+  @media screen and (max-width: 880px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 220px));
+    grid-auto-rows: 320px;
   }
 `
 
@@ -38,8 +44,8 @@ export const ContainerTitle = styled.div`
 
   border-bottom: 2px solid #9893938f;
 
-  @media screen and (max-width: 850px) {
-    height: 50px;
+  @media screen and (max-width: 880px) {
+    font-size: 15px;
   }
 `
 
@@ -58,8 +64,9 @@ export const ContainerItemsData = styled.div`
 
   padding: 20px 40px 0px 40px;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 880px) {
     padding: 10px 20px 0px 20px;
+    font-size: 11px;
   }
 `
 
@@ -74,7 +81,7 @@ export const ItemsData = styled.div`
 
   border-bottom: 1px solid #fff;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 880px) {
     height: 40px;
   }
 `
@@ -106,9 +113,11 @@ export const ContainerActions = styled.div`
   align-items: center;
 
   width: 100%;
+  
+  margin-top: 10px;
 
-  @media screen and (max-width: 850px) {
-    height: 140px;
+  @media screen and (max-width: 880px) {
+    margin-top: 0px;
   }
 `
 
@@ -121,7 +130,14 @@ export const ContainerStatistics = styled.div`
   width: 100%;
   height: 50px;
 
-  cursor: pointer;
+  @media screen and (max-width: 880px) {
+    font-size: 12px;
+    height: 40px;
+  }
+`
+
+export const Statistics = styled.p`
+  color: #FF3548;
 `
 
 export const ContainerButton = styled.div`
@@ -145,6 +161,11 @@ export const Button = styled.button`
   padding: 5px 10px;
 
   cursor: pointer;
+
+  @media screen and (max-width: 880px) {
+    font-size: 12px;
+    height: 30px;
+  }
 `
 
 export const ContainerAddCard = styled.div`
@@ -164,8 +185,16 @@ export const IconAdd = styled.img`
   height: auto;
 
   margin: 10px;
+
+  @media screen and (max-width: 600px) {
+    width: 25px;
+  }
 `
 
 export const PAdd = styled.p`
   font-size: 20px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
 `

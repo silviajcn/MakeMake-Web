@@ -13,11 +13,15 @@ export const FirtsContainer = styled.div`
   color: #fff;
 
   @media screen and (max-width: 770px) {
+    justify-content: center;
     flex-direction: column;
+    font-size: 14px;
   }
 
   @media screen and (max-width: 350px) {
     height: auto;
+    font-size: 12px;
+    padding: 5px;
   }
 `
 

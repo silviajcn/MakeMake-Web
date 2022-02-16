@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import Institutos from '../pages/Institutos';
 import EditData from '../pages/EditData';
 import Footer from '../components/Footer';
+import MakeMake from '../pages/MakeMake';
 
 
 const AppRouter = () => {
@@ -24,6 +25,8 @@ const AppRouter = () => {
                 <Route path='/institutos' element={ <Institutos /> } />
 
                 <Route path='/edit' element={ <EditData /> } />
+
+                <Route path='/makemake' element={ <MakeMake /> } />
                 
                 <Route path='*' element={<Navigate to="/" />} />
 

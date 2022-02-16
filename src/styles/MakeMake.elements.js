@@ -13,14 +13,14 @@ export const FirtsContainer = styled.div`
   background-size: cover;
   background-position: center;
 
-  padding: 40px 50px;
+  padding: 80px 0px;
 
   @media screen and (max-width: 1000px) {
-    padding: 100px 50px;
+    padding: 50px 0px;
   }
 
   @media screen and (max-width: 600px) {
-    padding: 50px 25px;
+    padding: 25px 0px;
   }
 `
 
@@ -31,37 +31,29 @@ export const ContainerItems = styled.div`
   align-items: center;
 
   text-align: center;
-
-  background: #FFF;
-  border-bottom: 1px solid #9893938f;
-  border-radius: 20px;
-  box-shadow: 0px 2px 8px #888;
-
-  padding: 100px;
-
-  @media screen and (max-width: 600px) {
-    padding: 50px;
-  }
-
-  @media screen and (max-width: 360px) {
-    padding: 25px;
-  }
 `
 
 export const ContainerImg = styled.img`
-  width: 250px;
+  width: auto;
   height: auto;
 
-  @media screen and (max-width: 600px) {
-    width: 200px;
+  @media screen and (max-width: 1100px) {
+    width: 700px;
   }
-`
 
-export const Text = styled.p`
-  font-size: 25px;
-  color: #838181;
+  @media screen and (max-width: 800px) {
+    width: 550px;
+  }
 
-  @media screen and (max-width: 600px) {
-    font-size: 18px;
+  @media screen and (max-width: 560px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 300px) {
+    width: 250px;
   }
 `

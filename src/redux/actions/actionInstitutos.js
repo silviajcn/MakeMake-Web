@@ -19,7 +19,7 @@ export const deleteInstitutosAsync = (sede) => {
         //console.log(datos);
 
         datos.forEach((docu) => {
-            console.log(docu.id);
+            //console.log(docu.id);
             deleteDoc(doc(db, "institutos", docu.id));
         })
         dispatch(deleteInstitutosSync(sede));
@@ -40,14 +40,14 @@ export const deleteInstitutosSync = (sede) => {
 
 // Action Update Institutos Async
 export const updateInstitutoAsync = (institutes) => {
-    console.log(institutes);
+    //console.log(institutes);
 
     return async (dispatch) => {
 
         const instCollections = collection(db, "institutos")
         const q = query(instCollections, where("sede", "==", institutes.sede))
         const data = await getDocs(q)
-        console.log(data);
+        //console.log(data);
 
         data.forEach((docu) => {
             updateDoc(doc(db, "institutos", docu.id), {
@@ -88,7 +88,7 @@ export const showDetailInstitutoAsync = (sede) => {
         datos.forEach((doc) => {
             instituto.push(doc.data())
         })
-        console.log(instituto);
+        //console.log(instituto);
         dispatch(showDetailInstitutoSync(instituto))
     }
 }
@@ -118,7 +118,7 @@ export const searchInstitutoAsync = (instituto) => {
         datos.forEach((doc) => {
             institute.push(doc.data())
         })
-        console.log(institute);
+        //console.log(institute);
         dispatch(searchInstitutoSync(institute))
     }
 }

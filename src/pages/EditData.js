@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from '../hooks/useForm';
 import { showDetailInstitutoAsync, updateInstitutoAsync, updateInstitutoSync, deleteInstitutosAsync } from '../redux/actions/actionInstitutos';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
     FirtsContainer,
     ContainerOne,
@@ -14,6 +14,7 @@ import {
     ContainerBaseTwo,
     ContainerBaseTitle,
     Span,
+    ContainerEdit,
     Input,
     BtnEdit,
     ContainerColors,
@@ -41,7 +42,8 @@ const EditData = () => {
     }, []);
 
     // Form update Institute
-    const [ values, handleInputChange, reset, setValues ] = useForm({
+    const { values, handleInputChange, reset, setValues
+} = useForm({
         nombre: '',
         telefono: '',
         correo: '',
@@ -65,12 +67,15 @@ const EditData = () => {
         })
     }
 
+    let history = useNavigate();
+
     const handlePut = (e) => {
         e.preventDefault()
         dispatch(updateInstitutoAsync(values))
-        console.log(values)
+        //console.log(values)
         reset()
         setUptateForm(false)
+        history("/institutos")
     }
 
     // Colors
@@ -113,22 +118,25 @@ const EditData = () => {
                         <ContainerBaseTitle className='font-one'>Nombre<Span>*</Span></ContainerBaseTitle>
                     </ContainerBaseTwo>
 
-                    <Input
-                        type="text"
-                        name="nombre"
-                        placeholder={e.nombre}
-                        value={nombre}
-                        onChange={handleInputChange}
-                    />
+                    <ContainerEdit>
+                        <Input
+                            type="text"
+                            name="nombre"
+                            placeholder={e.nombre}
+                            value={nombre}
+                            onChange={handleInputChange}
+                        />
 
-                    <BtnEdit
-                        className='font-one'
-                        type="button"
-                        value="update"
-                        onClick={() => handleUpdate(e)}
-                    >
-                        Editar
-                    </BtnEdit>
+                        <BtnEdit
+                            className='font-one'
+                            type="button"
+                            value="update"
+                            onClick={() => handleUpdate(e)}
+                        >
+                            Editar
+                        </BtnEdit>
+                    </ContainerEdit>
+
                 </ContainerBase>
 
                 <ContainerBase>
@@ -137,22 +145,25 @@ const EditData = () => {
                         <p className='font-two'>El número que ingreses correponde al número de contacto donde tus usuarios podrán llamar si es necesario</p>
                     </ContainerBaseTwo>
 
-                    <Input
-                        type="text"
-                        name="telefono"
-                        placeholder={e.telefono}
-                        value={telefono}
-                        onChange={handleInputChange}
-                    />
+                    <ContainerEdit>
+                        <Input
+                            type="text"
+                            name="telefono"
+                            placeholder={e.telefono}
+                            value={telefono}
+                            onChange={handleInputChange}
+                        />
 
-                    <BtnEdit
-                        className='font-one'
-                        type="button"
-                        value="update"
-                        onClick={() => handleUpdate(e.sede)}
-                    >
-                        Editar
-                    </BtnEdit>
+                        <BtnEdit
+                            className='font-one'
+                            type="button"
+                            value="update"
+                            onClick={() => handleUpdate(e.sede)}
+                        >
+                            Editar
+                        </BtnEdit>
+                    </ContainerEdit>
+                    
                 </ContainerBase>
 
                 <ContainerBase>
@@ -161,22 +172,25 @@ const EditData = () => {
                         <p className='font-two'>El correo que ingreses correponde al correo de contacto donde tus usuarios podrán escribir si es necesario</p>
                     </ContainerBaseTwo>
 
-                    <Input
-                        type="text"
-                        name="correo"
-                        placeholder={e.correo}
-                        value={correo}
-                        onChange={handleInputChange}
-                    />
+                    <ContainerEdit>
+                        <Input
+                            type="text"
+                            name="correo"
+                            placeholder={e.correo}
+                            value={correo}
+                            onChange={handleInputChange}
+                        />
 
-                    <BtnEdit
-                        className='font-one'
-                        type="button"
-                        value="update"
-                        onClick={() => handleUpdate(e.sede)}
-                    >
-                        Editar
-                    </BtnEdit>
+                        <BtnEdit
+                            className='font-one'
+                            type="button"
+                            value="update"
+                            onClick={() => handleUpdate(e.sede)}
+                        >
+                            Editar
+                        </BtnEdit>
+                    </ContainerEdit>
+                    
                 </ContainerBase>
 
                 <ContainerBase>
@@ -185,11 +199,12 @@ const EditData = () => {
                         <p className='font-two'>Ya no se puede cambiar</p>
                     </ContainerBaseTwo>
 
-                    <Input
-                        placeholder={e.paqueteAsignado}
-                    />
-
-                    <div></div>
+                    <ContainerEdit>
+                        <Input
+                            placeholder={e.paqueteAsignado}
+                        />
+                    </ContainerEdit>
+                    
                 </ContainerBase>
 
                 <ContainerBase>
@@ -243,7 +258,7 @@ const EditData = () => {
                             ?
                             <></>
                             :
-                            <Link to="/" className="links">
+                        <Link to="/institutos" className="links">    
                             <BtnUpdate
                                 className='font-one'
                                 type="button"
@@ -251,11 +266,12 @@ const EditData = () => {
                             >
                                 Actualizar
                             </BtnUpdate>
-                            </Link>
+                        </Link>   
                     }
 
                     
                 </ContainerActions>
+                
 
                 </Form.Group>
                 </Form>

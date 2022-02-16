@@ -9,6 +9,8 @@ import {
     ContainerOneInfo,
     ContainerTwo,
     ContainerTwoP,
+    ContainerDate,
+    Date,
     ContainerThree,
     ContainerThreeFilter,
     ContainerFour,
@@ -38,6 +40,12 @@ const Institutos = () => {
                 <h1>Tus institutos (Sedes)</h1>
                 <ContainerTwoP>5/5 sedes asignadas</ContainerTwoP>
             </ContainerTwo>
+            
+            <ContainerDate>
+                <Date>
+                    <p className='font-one'>Su suscritción finaliza el 25/02/22</p>
+                </Date>
+            </ContainerDate>
 
             <ContainerThree className='font-two'>
                 <ContainerThreeFilter>Filtra por instituto y podrás ver los cursos asignados.</ContainerThreeFilter>

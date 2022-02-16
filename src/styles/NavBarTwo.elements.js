@@ -39,6 +39,14 @@ export const Menu = styled.ul`
     flex-direction: column;
     transition: 0.5s all ease;
     border-right: 1px solid #D3DEDC;
+
+  @media screen and (max-width: 1150px) {
+    width: 40vw;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `
 
 export const MenuItem = styled.li`
@@ -71,6 +79,11 @@ export const SubTitles = styled.h4`
   padding: 2px;
 
   margin-bottom: 30px;
+
+  @media screen and (max-width: 970px) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 `
 
 export const Items = styled.div`
@@ -120,9 +133,13 @@ export const InputSearch = styled.input`
 
   padding: 0px 10px;
 
-  @media screen and (max-width: 850px) {
-    width: 360px;
-    height: 40px;
+  @media screen and (max-width: 1600px) {
+    width: 300px;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 970px) {
+    display: none;
   }
 `
 
@@ -141,6 +158,10 @@ export const BtnSearch = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 970px) {
+    display: none;
+  }
 `
 
 export const IconImg = styled.img`
@@ -153,6 +174,10 @@ export const IconImg = styled.img`
 export const ImgLogo = styled.img`
   width: 70px;
   height: auto;
+
+  @media screen and (max-width: 1600px) {
+    width: 55px;
+  }
 `
 
 export const LinksMenu = styled.div`
@@ -166,8 +191,9 @@ export const LinksMenu = styled.div`
   background: none;
   padding: 3px;
   border-radius: 2px;
-  &:hover {
-    cursor: pointer;
+
+  @media screen and (max-width: 970px) {
+    display: none;
   }
 `
 
@@ -175,4 +201,12 @@ export const LogoImgMake = styled.img`
   width: 210px;
   height: auto;
   margin: 20px;
+
+  @media screen and (max-width: 1000px) {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100px;
+  }
 `

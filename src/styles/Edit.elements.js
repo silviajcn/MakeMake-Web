@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const FirtsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: start;
-  align-items: start; */
   
   width: 100%;
   height: auto;
@@ -13,9 +11,6 @@ export const FirtsContainer = styled.div`
   background-size: cover;
   background-position: center;
 
-  @media screen and (max-width: 850px) {
-    width: 750px;
-  }
 `
 
 export const ContainerOne = styled.div`
@@ -31,6 +26,11 @@ export const ContainerOne = styled.div`
   margin-top: 20px;
 
   background: #f1f1f171;
+
+  @media screen and (max-width: 500px) {
+    width: 250px;
+    font-size: 12px;
+  }
 `
 
 export const ContainerOneItems = styled.div`
@@ -56,17 +56,21 @@ export const ContainerTwo = styled.div`
   justify-content: space-between;
   align-items: center;
   
-  width: 1300px;
+  width: 90%;
 
   margin: 20px 20px 0px 20px;
 
   border-bottom: 1px solid #4D4D4D;
-  padding: 0px 100px;
+  padding: 0px 200px;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 840px) {
+    padding: 0px 80px;
+  }
+
+  @media screen and (max-width: 500px) {
     justify-content: space-between;
     
-    width: 590px;
+    width: 80%;
     padding: 0px 20px;
   }
 `
@@ -76,14 +80,9 @@ export const ContainerThree = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
-  width: 1300px;
 
-  @media screen and (max-width: 850px) {
-    justify-content: space-between;
-    
-    width: 590px;
-    padding: 0px 20px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
   }
 `
 
@@ -92,19 +91,23 @@ export const ContainerBase = styled.div`
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  
-  width: 1000px;
 
   margin: 20px 20px 0px 20px;
 
   border-bottom: 1px solid #4D4D4D;
   padding: 30px;
 
-  @media screen and (max-width: 850px) {
-    justify-content: space-between;
-    
-    width: 590px;
-    padding: 0px 20px;
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    align-items: start;
+
+    margin: 0px 0px 0px 0px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 0px;
+    padding: 20px 0px;
+    width: 100%;
   }
 `
 
@@ -114,16 +117,34 @@ export const ContainerBaseTwo = styled.div`
   justify-content: start;
   align-items: start;
   
-  width: 300px;
+  width: 450px;
   height: auto;
 
-  margin-right: 100px;
+  margin-right: 50px;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 950px) {
     justify-content: space-between;
     
-    width: 590px;
-    padding: 0px 20px;
+    width: 350px;
+    padding: 10px 0px;
+  }
+
+   @media screen and (max-width: 560px) {
+    justify-content: space-between;
+    
+    width: 220px;
+    padding: 10px 5px;
+
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 360px) {
+    justify-content: space-between;
+    
+    width: 200px;
+    padding: 10px 5px;
+
+    font-size: 12px;
   }
 `
 
@@ -137,8 +158,17 @@ export const Span = styled.span`
   color: #FF3548;
 `
 
+export const ContainerEdit = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+`
+
 export const Input = styled.input`
-  width: 400px;
+  width: 100%;
   height: 30px;
 
   background: #F1F1F1;
@@ -148,6 +178,15 @@ export const Input = styled.input`
   padding: 0px 10px;
 
   margin-right: 30px;
+
+  @media screen and (max-width: 940px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 200px;
+    margin-right: 20px;
+  }
 `
 
 export const BtnEdit = styled.button`
@@ -161,6 +200,10 @@ export const BtnEdit = styled.button`
   border-bottom: 1px solid #FF3548;
 
   cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
 `
 
 export const ContainerColors = styled.div`
@@ -173,6 +216,16 @@ export const ContainerColors = styled.div`
   column-gap: 10px;
   row-gap: 20px;
   justify-content: center;
+
+  @media screen and (max-width: 860px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 250px;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 70px));
+    grid-auto-rows: 40px;
+  }
 `
 
 export const Color = styled.div`
@@ -187,6 +240,10 @@ export const Color = styled.div`
   border-radius: 5px;
 
   cursor: pointer;
+
+  @media screen and (max-width: 500px) {
+    height: 40px;
+  }
 `
 
 export const ColorCapa = styled.div`
@@ -199,9 +256,16 @@ export const ContainerActions = styled.div`
   justify-content: end;
   align-items: end;
   
-  width: 1000px;
+  width: 100%;
   height: auto;
   padding: 50px;
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 10px;
+  }
 `
 
 export const BtnDelete = styled.button`
@@ -233,15 +297,20 @@ export const DeleteP = styled.p`
   cursor: pointer;
 
   margin-right: 50px;
+
+  @media screen and (max-width: 500px) {
+    width: 80px;
+    font-size: 12px;
+    margin-right: 25px;
+  }
 `
 
 export const BtnUpdate = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: end;
-
   padding: 5px 20px;
 
   cursor: pointer;
+
+  @media screen and (max-width: 500px) {
+    padding: 2px 10px;
+  }
 `

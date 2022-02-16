@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import {
     FirtsContainer,
     ContainerTwo,
+    ContainerLgCct,
     ContainerBase,
     ContainerRow,
+    ContainerPaises,
     LogoImgMake,
     LogoImg,
     Paises,
@@ -29,7 +31,8 @@ const Footer = () => {
         <FirtsContainer className="font-two">
 
             <ContainerTwo>
-                <ContainerBase>
+                <ContainerLgCct>
+                    <ContainerBase>
                     <ContainerRow>
                         <div>
                             <Link to="/" className="links">
@@ -45,13 +48,13 @@ const Footer = () => {
                         </div>
                     </ContainerRow>
 
-                    <ContainerRow>
+                    <ContainerPaises>
                         <Paises>COLOMBIA</Paises>
                         <Paises>CHILE</Paises>
                         <Paises>ECUADOR</Paises>
                         <Paises>ESTADOS UNIDOS</Paises>
                         <Paises>MÉXICO</Paises>
-                    </ContainerRow>
+                    </ContainerPaises>
                 </ContainerBase>
 
                 <ContainerBase>
@@ -76,6 +79,7 @@ const Footer = () => {
                         
                     </ContainerIcons>
                 </ContainerBase>
+                </ContainerLgCct>
 
                 <ContainerBaseForm>
                     <Text>Suscríbete a nuestro boletín para recibir recomendaciones de lectura y actividades de nuestros libros.</Text>
@@ -91,7 +95,7 @@ const Footer = () => {
             </ContainerTwo>
 
             <ContainerThree>
-                <Copyright>MakeMake By Silvi. Todos los derechos reservados.</Copyright>
+                <Copyright href="https://mi-portafolio-personal.vercel.app/" target="_blank" rel="noreferrer">© 2022, MakeMake By Silvi.</Copyright>
             </ContainerThree>
             
         </FirtsContainer>

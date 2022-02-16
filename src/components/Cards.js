@@ -14,6 +14,7 @@ import {
     SeeEdit,
     ContainerActions,
     ContainerStatistics,
+    Statistics,
     ContainerButton,
     Button,
     ContainerAddCard,
@@ -106,7 +107,7 @@ const Cards = () => {
                             <ContainerActions>
                                 <ContainerStatistics>
                                     <IconsImg src="https://res.cloudinary.com/silviajcn/image/upload/v1644890736/Pruebas%20Tecnicas/MakeMake/PaginaWeb/icons/estadisticas_wbnjlg.svg" alt="logo" />
-                                    <SeeEdit>Ver estadísticas</SeeEdit>
+                                    <Statistics>Ver estadísticas</Statistics>
                                 </ContainerStatistics>
 
                                 <ContainerButton>
