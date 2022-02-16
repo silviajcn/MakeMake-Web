@@ -33,7 +33,9 @@ const NavBarTwo = () => {
                         <MenuItem>
                             <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                 <div>
-                                    <SubTitles>Planes MakeMake</SubTitles>
+                                    <Link to="/institutos" className="links">
+                                        <SubTitles>Plan Institutos</SubTitles>
+                                    </Link>
                                 </div>
                             </MenuItemLink>
                         </MenuItem>
