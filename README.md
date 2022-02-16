@@ -4,7 +4,11 @@
 
 MakeMake es una biblioteca digital que ofrece una cuidadosa selección de libros de las mejores editoriales de América Latina para promover la lectura crítica y de calidad en niños y jóvenes.
 
-
+En la página se puede:
+* Ver los institutos que cuentan con planes, así como su información respectiva.
+* En el buscador ubicado en la página de Institutos, se puede realizar la búsqueda por nombre de instituto, con palabras en minúsculas.
+* Al dar click en editar, el usuario será redireccionado a la página de Editar sede, en donde podrá ver la información en los campos, y al dar click en editar estará disponible la información que desea editar, esta acción se puede realizar cuantas veces se necesite.
+* Se puede eliminar el instituto al dar click en Eliminar sede, esta acción es irreversible.
 
 ## 📌 Requisitos del proyecto:
 
@@ -14,6 +18,7 @@ MakeMake es una biblioteca digital que ofrece una cuidadosa selección de libro
 
 ## 💻 Puede visitar MakeMake Web igresa al siguiente link:
 
+https://makemake-web.web.app/
     
 ## 💎 Proyecto
 
@@ -31,6 +36,10 @@ Para la creación del proyecto se utilizaron las siguientes herramientas de desa
 * ```react-bootstrap```
 * ```react-icons```
 
+Otras herramientas de desarrollo:
+
+* Cloudinary
+
 ## 🔥 Descarga del proyecto e Instalación
 
 * Clonar el repositorio
@@ -41,7 +50,7 @@ Para la creación del proyecto se utilizaron las siguientes herramientas de desa
 
 ## 🔍 Vista 
 
-
+![MakeMake-capture](https://user-images.githubusercontent.com/88461234/154322755-09278746-2ef6-426d-a1cb-9f2522bde14b.png)
 
 ## 🌟 Autor
 
