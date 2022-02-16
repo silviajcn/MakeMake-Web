@@ -54,7 +54,7 @@ Otras herramientas de desarrollo:
 
 ### Vista en pc:
 
-<img width="50%" align="left" alt="vistas" src="https://media.giphy.com/media/YQS80mxGHml7IIWXhQ/giphy.gif" />
+<img width="50%" justify="center" align="center" alt="vistas" src="https://media.giphy.com/media/YQS80mxGHml7IIWXhQ/giphy.gif" />
 
 ## 🌟 Autor
 
